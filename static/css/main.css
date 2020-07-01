@@ -85,8 +85,8 @@ main {
     height: 10px;
     display: block;
     position: absolute;
-    left: -25px;
-    top: 7px;
+    left: -20px;
+    top: 5px;
     background: url(/static/img/back-slash-orange.png) no-repeat 50%;
 }
 
@@ -197,7 +197,7 @@ h3.info-cont__title {
 }
 
 .page-content {
-    padding-left: 40px;
+    padding-left: 15px;
     display: flex;
     flex-direction: column;
     margin-bottom: 30px;
@@ -207,6 +207,7 @@ h3.info-cont__title {
     color: #434950;
     line-height: 1.5;
     margin-bottom: 23px;
+    text-align: justify;
 }
 
 .page-article-link {
@@ -215,6 +216,7 @@ h3.info-cont__title {
     text-decoration: none;
     display: block;
     margin-bottom: 15px;
+    margin-left: 20px;
     line-height: 1.4;
 }
 
@@ -293,7 +295,7 @@ h3.info-cont__title {
 
 .pick-container .pick-container__pick {
     flex: 0 1 130px;
-    margin-right: 7px;
+    margin-right: auto;
     height: 130px;
 }
 
@@ -405,11 +407,11 @@ h3.info-cont__title {
 
 .pic-container.right {
     margin-right: 0;
-    margin-left: 20px;
+    margin-left: auto;
 }
 
 .pic-container.left {
-    margin-right: 47px;
+    margin-right: auto;
     margin-left: 0px;
 }
 
@@ -428,13 +430,59 @@ h3.info-cont__title {
     padding-bottom: 4px;
 }
 
+.content-side.leading-main {
+}
+
+.content-side.leading-technology {
+    display: none;
+}
+
+.subtech-list {
+    display: none;
+    list-style: none;
+    font-size: 13px;
+    margin-bottom: 20px;
+    margin-top: -10px;
+}
+
+.active+.subtech-list {
+    display: block;
+}
+
+.subtech-list li {
+    margin-bottom: 10px;
+}
+
+.subtech-list li:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.technology-block {
+    display: none;
+}
+
+.pick-with-text-container__text-container .contents__title {
+    font-size: 16px;
+}
+
+.pick-with-text-container {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.pick-with-text-container__text-container {
+    margin-left: 55px;
+}
+
 .pic-container.leading-page img {
-    width: 263px;
-    height: 263px;
+    width: 235px;
+    height: 235px;
 }
 
 .pic-and-text__text-cont {
-    padding-top: 15px;
+    padding-left: 22px;
+    margin-top: -5px;
 }
 
 .pic-and-text__tags {
@@ -442,6 +490,7 @@ h3.info-cont__title {
     text-decoration: underline;
     margin-bottom: 15px;
     font-size: 15px;
+    list-style: none;
 }
 
 .page-banner.industries-page {
@@ -543,6 +592,7 @@ h3.info-cont__title {
     font-size: 15px;
     text-decoration: underline;
     position: relative;
+    margin-left: 12px;
 }
 
 .left-pre-double-slash::before {
