@@ -11,7 +11,11 @@ header {
 
 .logo {
     margin-right: 50px;
-    margin-top: 14px;
+    margin-top: 18px;
+    width: 240px;
+    height: 40px;
+    background: url(/static/img/logo-2-ru-color.svg) no-repeat;
+    background-size: contain;
 }
 
 .logo img {
