@@ -269,7 +269,7 @@ h3.info-cont__title {
 }
 
 .page-contents__text-cont {
-    max-width: 185px;
+    text-align: left;
     margin-left: auto;
 }
 
