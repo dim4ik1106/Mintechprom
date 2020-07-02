@@ -111,17 +111,21 @@ main {
     flex-direction: column;
     padding: 22px 22px;
     background-color: #F4F3F2;
-    padding-top: 35px;
+    padding-top: 30px;
 }
 
 .contents__title {
     color: #303840;
-    /* font: 15px 'CenturyGothic-Bold', Arial; */
     margin-left: auto;
     margin-bottom: 20px;
     position: relative;
     font-size: 14px;
-    font-family: 'Segoe UI Bold';
+    font-family: 'Segoe UI';
+    font-weight: 800;
+}
+
+h1.contents__title {
+    font-size: 14px;
 }
 
 .left-pre-arrow {
@@ -147,10 +151,14 @@ main {
 
 .contents__item {
     color: #183E62;
-    text-decoration: underline;
+    text-decoration: none;
     margin-bottom: 20px;
-    /* font: 14px 'CenturyGothic-Bold', Arial; */
+    font-weight: 700;
     text-align: right;
+}
+
+.contents__item:hover {
+    text-decoration: underline;
 }
 
 .side-contacts {
@@ -196,7 +204,7 @@ h3.info-cont__title {
 
 .content-side {
     flex: 1 0;
-    padding: 30px 57px 80px 17px;
+    padding: 30px 57px 80px 27px;
     width: 644px;
 }
 
@@ -245,6 +253,10 @@ h3.info-cont__title {
     padding: 38px 26px 21px;
     display: flex;
     flex-direction: column;
+}
+
+.about-page.page-banner__title {
+    margin-bottom: 15px;
 }
 
 .page-banner__title,
@@ -452,9 +464,12 @@ h3.info-cont__title {
 
 .contents__title.leading-page {
     color: #303840;
-    font: 15px 'CenturyGothic', Arial;
     margin-bottom: 30px;
     cursor: pointer;
+}
+
+.contents__title.leading-page:hover {
+    text-decoration: underline;
 }
 
 .gallery-pic-container.leading-page {
@@ -488,9 +503,10 @@ h3.info-cont__title {
 .subtech-list li {
     margin-bottom: 10px;
     font-style: italic;
-    /* font: 14px 'CenturyGothic', Arial; */
+    font-weight: 600;
     text-align: right;
     font-size: 12px;
+    color: #183E62;
 }
 
 .subtech-list li:hover {
@@ -530,13 +546,12 @@ h3.info-cont__title {
     color: #434950;
     text-decoration: underline;
     margin-bottom: 15px;
-    font-size: 15px;
     list-style: none;
 }
 
 .page-banner.industries-page {
     height: 230px;
-    background: url(/static/img/banner-industries-page.jpg) no-repeat 50%;
+    background: url(/static/img/industries/3.1.jpg) no-repeat 50%;
     padding-left: 30px;
 }
 
@@ -553,7 +568,6 @@ h3.info-cont__title {
 .photos-with-description__column {
     flex: 0 0;
     margin-right: auto;
-    width: 121px;
     position: relative;
     cursor: pointer;
 }
@@ -595,8 +609,14 @@ h3.info-cont__title {
 
 .photos-wit-description__photo-cont {
     position: relative;
-    width: 121px;
-    height: 291px;
+    width: 150px;
+    height: 240px;
+}
+
+.photos-wit-description__photo-cont img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
 .photos-wit-description__photo-cont::before {
