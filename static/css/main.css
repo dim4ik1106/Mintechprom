@@ -670,11 +670,11 @@ h3.info-cont__title {
     padding: 5px;
     padding-left: 0;
 }
-
+/* 
 .photos-with-description__column:nth-child(Even) .under-desc__bg {
     bottom: 0;
     top: unset;
-}
+} */
 .under-desc__bg:nth-child(1) {
 }
 
