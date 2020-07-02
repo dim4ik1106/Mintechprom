@@ -4,6 +4,10 @@
 /* font: 14px 'CenturyGothic-Bold', Arial; */
 /* font: 14px 'CenturyGothic', Arial; */
 /* font: 18px "Segoe UI", sans-serif; */
+/* font-family: 'Segoe UI Normal'; */
+/* font-family: 'Segoe UI Semibold'; */
+/* font-family: 'Segoe UI Bold'; */
+/* font-family: 'Segoe UI Light'; */
 
 
 *,
@@ -23,6 +27,7 @@ a:active {
 body {
     /* font: 14px 'ArialNarrow-Bold', Arial; */
     font: 15px "ArialNarrow", Arial;
+    font: 12px "Segoe UI", sans-serif;
     background-color: #d5d5d5;
 }
 
@@ -49,10 +54,11 @@ main {
 }
 
 .page-banner {
+    height: 393px !important;
     display: flex;
     position: relative;
     width: 100%;
-    background-size: contain;
+    background-size: cover !important;
     border-bottom: 1px solid #fff;
 }
 
@@ -86,7 +92,7 @@ main {
     display: block;
     position: absolute;
     left: -20px;
-    top: 5px;
+    top: 2px;
     background: url(/static/img/back-slash-orange.png) no-repeat 50%;
 }
 
@@ -105,14 +111,17 @@ main {
     flex-direction: column;
     padding: 22px 22px;
     background-color: #F4F3F2;
+    padding-top: 35px;
 }
 
 .contents__title {
     color: #303840;
-    font: 15px 'CenturyGothic-Bold', Arial;
+    /* font: 15px 'CenturyGothic-Bold', Arial; */
     margin-left: auto;
     margin-bottom: 20px;
     position: relative;
+    font-size: 14px;
+    font-family: 'Segoe UI Bold';
 }
 
 .left-pre-arrow {
@@ -140,7 +149,7 @@ main {
     color: #183E62;
     text-decoration: underline;
     margin-bottom: 20px;
-    font: 14px 'CenturyGothic-Bold', Arial;
+    /* font: 14px 'CenturyGothic-Bold', Arial; */
     text-align: right;
 }
 
@@ -149,6 +158,7 @@ main {
     flex-direction: column;
     padding: 22px 22px;
     padding-left: 48px;
+    padding-top: 35px;
 }
 
 .side-contacts__container {
@@ -192,8 +202,9 @@ h3.info-cont__title {
 
 .page-title {
     color: #303840;
-    font: 30px 'CenturyGothic', Arial;
+    /* font: 30px 'CenturyGothic', Arial; */
     margin-bottom: 30px;
+    font-size: 24px;
 }
 
 .page-content {
@@ -212,7 +223,8 @@ h3.info-cont__title {
 
 .page-article-link {
     color: #183E62;
-    font-size: 15px;
+    color: #303840;
+    font-size: 12px;
     text-decoration: none;
     display: block;
     margin-bottom: 15px;
@@ -253,12 +265,13 @@ h3.info-cont__title {
     color: #434950;
     margin-bottom: 23px;
     line-height: 1.6;
-    font-size: 14px;
+    font-size: 12px;
 }
 
 .pick-container {
     display: flex;
 }
+
 .pick-container img,
 .mini-pick-container img {
     object-fit: cover;
@@ -367,7 +380,7 @@ h3.info-cont__title {
 
 .page-banner.projects-page {
     height: 230px;
-    background: url(/static/img/banner-projects-page.jpg) no-repeat 50%;
+    background: url(/static/img/projects/6.0.jpg) no-repeat 50%;
     padding-left: 31px;
 }
 
@@ -375,8 +388,26 @@ h3.info-cont__title {
     margin-top: 35px;
 }
 
+.project-title__container {
+    display: flex;
+}
+
+.project-title__container .contents__title:first-child {
+    margin-left: 0;
+    width: 50%;
+}
+.project-title__container .contents__title:last-child {
+    width: 45%;
+}
+
+.project-description__container {
+    display: flex;
+    flex-direction: column;
+}
+
 .pic-and-text {
     display: flex;
+    margin-bottom: 30px;
 }
 
 .pic-and-text .page-paragraph {
@@ -388,6 +419,10 @@ h3.info-cont__title {
     margin-right: 24px;
     padding-top: 6px;
     padding-bottom: 2px;
+}
+
+.pic-container.project-pic img {
+    max-width: 400px;
 }
 
 .page-banner.leading-page {
@@ -419,6 +454,7 @@ h3.info-cont__title {
     color: #303840;
     font: 15px 'CenturyGothic', Arial;
     margin-bottom: 30px;
+    cursor: pointer;
 }
 
 .gallery-pic-container.leading-page {
@@ -430,8 +466,7 @@ h3.info-cont__title {
     padding-bottom: 4px;
 }
 
-.content-side.leading-main {
-}
+.content-side.leading-main {}
 
 .content-side.leading-technology {
     display: none;
@@ -443,6 +478,7 @@ h3.info-cont__title {
     font-size: 13px;
     margin-bottom: 20px;
     margin-top: -10px;
+    max-width: 80%;
 }
 
 .active+.subtech-list {
@@ -451,6 +487,10 @@ h3.info-cont__title {
 
 .subtech-list li {
     margin-bottom: 10px;
+    font-style: italic;
+    /* font: 14px 'CenturyGothic', Arial; */
+    text-align: right;
+    font-size: 12px;
 }
 
 .subtech-list li:hover {
@@ -460,6 +500,7 @@ h3.info-cont__title {
 
 .technology-block {
     display: none;
+    padding-top: 5px;
 }
 
 .pick-with-text-container__text-container .contents__title {
@@ -506,11 +547,12 @@ h3.info-cont__title {
 .photos-with-description {
     display: flex;
     margin-bottom: 70px;
+    padding-left: 15px;
 }
 
 .photos-with-description__column {
     flex: 0 0;
-    margin-right: 2px;
+    margin-right: auto;
     width: 121px;
     position: relative;
     cursor: pointer;
@@ -532,10 +574,12 @@ h3.info-cont__title {
 }
 
 .photos-with-description__description {
-    font: 12px 'CenturyGothic-Bold', Arial;
+    /* font: 12px 'CenturyGothic-Bold', Arial; */
     margin-bottom: 8px;
     margin-top: 33px;
     padding: 0 5px;
+    height: 60px;
+    font-size: 12px;
 }
 
 .photos-with-description__description::before {
@@ -589,7 +633,7 @@ h3.info-cont__title {
     color: #434950;
     line-height: 1.5;
     margin-bottom: 23px;
-    font-size: 15px;
+    font-size: 12px;
     text-decoration: underline;
     position: relative;
     margin-left: 12px;
@@ -621,6 +665,7 @@ h3.info-cont__title {
 .two-column-wrapper {
     display: flex;
 }
+
 .two-column-wrapper.with-margin-bottom {
     margin-bottom: 35px;
 }
@@ -652,4 +697,13 @@ h3.info-cont__title {
 
 img.impleneted-project {
     margin-bottom: 35px;
+}
+
+.no-left-menu {
+    width: 100%;
+}
+
+.content-side.no-left-menu {
+    padding-left: 40px;
+    padding-right: 40px;
 }
