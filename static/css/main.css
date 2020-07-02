@@ -406,10 +406,11 @@ h3.info-cont__title {
 
 .project-title__container .contents__title:first-child {
     margin-left: 0;
-    width: 50%;
+    margin-bottom: 10px;
 }
-.project-title__container .contents__title:last-child {
-    width: 45%;
+
+.project-title__container span {
+    margin-right: 10px;
 }
 
 .project-description__container {
