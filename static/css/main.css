@@ -120,8 +120,7 @@ main {
     margin-bottom: 20px;
     position: relative;
     font-size: 14px;
-    font-family: 'Segoe UI';
-    font-weight: 800;
+    font-family: 'Segoe UI Bold';
 }
 
 h1.contents__title {
@@ -153,8 +152,8 @@ h1.contents__title {
     color: #183E62;
     text-decoration: none;
     margin-bottom: 20px;
-    font-weight: 700;
     text-align: right;
+    font-family: 'Segoe UI SemiBold';
 }
 
 .contents__item:hover {
@@ -190,6 +189,7 @@ h1.contents__title {
     color: #183E62;
     margin-bottom: 5px;
     font-size: 14px;
+    font-family: 'Segoe UI Bold';
 }
 
 h3.info-cont__title {
@@ -503,7 +503,6 @@ h3.info-cont__title {
 .subtech-list li {
     margin-bottom: 10px;
     font-style: italic;
-    font-weight: 400;
     text-align: right;
     font-size: 12px;
     color: #183E62;
