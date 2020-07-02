@@ -10,11 +10,12 @@ header {
 }
 
 .logo {
-    /* background: url(/static/img/logo-2-en.png) no-repeat 50%;
-    background-size: contain; */
-    /* width: 227px;
-    height: 55px; */
     margin-right: 50px;
+    margin-top: 14px;
+}
+
+.logo img {
+    width: 240px;
 }
 
 .tagline p {

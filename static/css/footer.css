@@ -25,11 +25,11 @@ footer {
 }
 
 .footer__logo {
-    background: url(/static/img/logo-b&w.png) no-repeat 50%;
+    background: url(/static/img/logo-b&w-ru.png) no-repeat 50%;
     background-size: contain;
-    width: 144px;
+    width: 215px;
     height: 35px;
-    margin-bottom: 10px;
+    margin-bottom: 5px;
 }
 
 .footer__tagline {
