@@ -51,6 +51,17 @@
 }
 
 @font-face {
+    font-family: "SegoeUI-Italic";
+    src: url("/static/fonts/SegoeUI-Italic/SegoeUIItalic.eot"); /* IE9 Compat Modes */
+    src: url("/static/fonts/SegoeUI-Italic/SegoeUIItalic.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+      url("/static/fonts/SegoeUI-Italic/SegoeUIItalic.otf") format("opentype"), /* Open Type Font */
+      url("/static/fonts/SegoeUI-Italic/SegoeUIItalic.svg") format("svg"), /* Legacy iOS */
+      url("/static/fonts/SegoeUI-Italic/SegoeUIItalic.woff2") format("woff2"); /* Modern Browsers */
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
     font-family: "ArialNarrow-Bold";
     src: url("/static/fonts/6428.eot");
     /* IE9 Compat Modes */

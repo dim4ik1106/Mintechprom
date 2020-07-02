@@ -1,0 +1,11 @@
+/* font converted using font-converter.net. thank you! */
+@font-face {
+  font-family: "SegoeUI-Italic";
+  src: url("./fonts/SegoeUIItalic.eot"); /* IE9 Compat Modes */
+  src: url("./fonts/SegoeUIItalic.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+    url("./fonts/SegoeUIItalic.otf") format("opentype"), /* Open Type Font */
+    url("./fonts/SegoeUIItalic.svg") format("svg"), /* Legacy iOS */
+    url("./fonts/SegoeUIItalic.woff2") format("woff2"); /* Modern Browsers */
+  font-weight: normal;
+  font-style: normal;
+}

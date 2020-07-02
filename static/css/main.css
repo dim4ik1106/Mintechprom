@@ -204,7 +204,7 @@ h3.info-cont__title {
 
 .content-side {
     flex: 1 0;
-    padding: 30px 57px 80px 27px;
+    padding: 30px 57px 80px 40px;
     width: 644px;
 }
 
@@ -505,7 +505,7 @@ h3.info-cont__title {
 
 .subtech-list li {
     margin-bottom: 10px;
-    font-style: italic;
+    font-family: 'SegoeUI-Italic';
     text-align: right;
     font-size: 12px;
     color: #183E62;
@@ -528,6 +528,9 @@ h3.info-cont__title {
 .pick-with-text-container {
     display: flex;
     margin-bottom: 20px;
+}
+.pick-with-text-container img {
+    max-width: 300px;
 }
 
 .pick-with-text-container__text-container {
@@ -578,25 +581,37 @@ h3.info-cont__title {
     cursor: pointer;
 }
 
+.photos-with-description__column:nth-child(Even) {
+    margin-top: 75px;
+}
+
 .photos-with-description__column::after {
     display: block;
     content: ' ';
     width: 3px;
-    height: 60px;
+    /* height: 60px; */
+    height: 0px;
     position: absolute;
     left: calc(50% - 2px);
-    bottom: -65px;
+    /* bottom: -65px; */
+    bottom: 65px;
     background-color: #DE983A;
-    opacity: 0;
+    opacity: 1;
     transition: all .2s;
 }
 
-.photos-with-description__column.active::after {
-    opacity: 1;
+.photos-with-description__column:nth-child(even)::after {
+    bottom: -10px;
 }
 
-.photos-with-description__column.active:nth-child(odd):after {
-    /* height: 80px; */
+.photos-with-description__column.active::after {
+    /* opacity: 1; */
+    height: 60px;
+    bottom: -65px;
+}
+
+.photos-with-description__column.active:nth-child(odd)::after {
+    height: 135px;
 }
 
 .photos-with-description__column:nth-last-child(1) {
@@ -649,11 +664,18 @@ h3.info-cont__title {
     background-color: rgba(255, 255, 255, 0.6);
     left: 0;
     width: 100%;
-    bottom: 0;
+    top: 0;
     transition: all .2s;
     height: 75px;
     padding: 5px;
     padding-left: 0;
+}
+
+.photos-with-description__column:nth-child(Even) .under-desc__bg {
+    bottom: 0;
+    top: unset;
+}
+.under-desc__bg:nth-child(1) {
 }
 
 .active .under-desc__bg {
