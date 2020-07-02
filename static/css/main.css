@@ -153,7 +153,7 @@ h1.contents__title {
     text-decoration: none;
     margin-bottom: 20px;
     text-align: right;
-    font-family: 'Segoe UI SemiBold';
+    font-family: 'Segoe UI Bold';
 }
 
 .contents__item:hover {
@@ -407,10 +407,12 @@ h3.info-cont__title {
 .project-title__container .contents__title:first-child {
     margin-left: 0;
     margin-bottom: 10px;
+    position: relative;
 }
 
 .project-title__container span {
-    margin-right: 10px;
+    position: absolute;
+    left: -40px;
 }
 
 .project-description__container {
@@ -576,15 +578,25 @@ h3.info-cont__title {
     cursor: pointer;
 }
 
-.photos-with-description__column.active::after {
+.photos-with-description__column::after {
+    display: block;
     content: ' ';
     width: 3px;
     height: 50px;
-    display: block;
     position: absolute;
     left: calc(50% - 2px);
     bottom: -55px;
     background-color: #DE983A;
+    opacity: 0;
+    transition: all .2s;
+}
+
+.photos-with-description__column.active::after {
+    opacity: 1;
+}
+
+.photos-with-description__column.active:nth-child(odd):after {
+    height: 80px;
 }
 
 .photos-with-description__column:nth-last-child(1) {
@@ -592,15 +604,29 @@ h3.info-cont__title {
 }
 
 .photos-with-description__description {
-    /* font: 12px 'CenturyGothic-Bold', Arial; */
-    margin-bottom: 8px;
-    margin-top: 33px;
+    margin-bottom: 36px;
+    margin-top: 5px;
     padding: 0 5px;
+    padding-left: 22px;
     height: 60px;
     font-size: 12px;
+    transition: all .2s;
+}
+
+.active .photos-with-description__description {
+    padding-top: 0;
+    padding-left: 5px;
+    margin-top: 33px;
+    margin-bottom: 8px;
 }
 
 .photos-with-description__description::before {
+    left: 5px;
+    top: 0px;
+    transition: all .2s;
+}
+
+.active .photos-with-description__description::before {
     left: 5px;
     top: -25px;
 }
@@ -626,7 +652,7 @@ h3.info-cont__title {
 .photos-wit-description__photo-cont::before {
     width: 100%;
     height: 100%;
-    display: none;
+    display: block;
     position: absolute;
     top: 0;
     bottom: 0;
@@ -634,11 +660,13 @@ h3.info-cont__title {
     right: 0;
     content: ' ';
     background-color: #DE983A;
-    opacity: 80%;
+    opacity: 0;
+    transition: all .2s;
 }
 
-.photos-with-description__column.active .photos-wit-description__photo-cont::before {
-    display: block;
+.active .photos-wit-description__photo-cont::before {
+    /* display: block; */
+    opacity: .6;
 }
 
 .changeable-gray-bg-text {
