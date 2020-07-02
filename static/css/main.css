@@ -26,7 +26,7 @@ a:active {
 
 body {
     /* font: 14px 'ArialNarrow-Bold', Arial; */
-    font: 15px "ArialNarrow", Arial;
+    /* font: 15px "ArialNarrow", Arial; */
     font: 12px "Segoe UI", sans-serif;
     background-color: #d5d5d5;
 }
@@ -503,7 +503,7 @@ h3.info-cont__title {
 .subtech-list li {
     margin-bottom: 10px;
     font-style: italic;
-    font-weight: 600;
+    font-weight: 400;
     text-align: right;
     font-size: 12px;
     color: #183E62;
@@ -547,6 +547,10 @@ h3.info-cont__title {
     text-decoration: underline;
     margin-bottom: 15px;
     list-style: none;
+}
+
+.pic-and-text__tags {
+    cursor: pointer;
 }
 
 .page-banner.industries-page {
@@ -609,7 +613,7 @@ h3.info-cont__title {
 
 .photos-wit-description__photo-cont {
     position: relative;
-    width: 150px;
+    width: 161px;
     height: 240px;
 }
 
