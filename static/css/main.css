@@ -249,7 +249,7 @@ h3.info-cont__title {
 
 .page-banner.about-page {
     height: 230px;
-    background: url(/static/img/banner-about-page.jpg) no-repeat 50%;
+    background: url(/static/img/2.1.jpg) no-repeat 50%;
     padding: 38px 26px 21px;
     display: flex;
     flex-direction: column;
@@ -365,7 +365,7 @@ h3.info-cont__title {
 
 .page-banner.audit-page {
     height: 230px;
-    background: url(/static/img/banner-audit-page.jpg) no-repeat 50%;
+    background: url(/static/img/5.1.jpg) no-repeat 50%;
     padding-left: 46px;
     background-size: 101%;
 }
@@ -440,7 +440,7 @@ h3.info-cont__title {
 
 .page-banner.leading-page {
     height: 230px;
-    background: url(/static/img/banner-leading-page.jpg) no-repeat 50%;
+    background: url(/static/img/leading/4.1.jpg) no-repeat 50%;
     padding-right: 42px;
 }
 
