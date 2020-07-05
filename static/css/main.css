@@ -71,14 +71,18 @@ main {
 
 .page-banner.main-page {
     height: 393px;
-    background: url(/static/img/banner-main-page.jpg) no-repeat 50%;
+    /* background: url(/static/img/banner-main-page.jpg) no-repeat 50%; */
     padding-left: 37px;
+    position: relative;
+    overflow: hidden;
 }
 
 .page-banner__title.main-page {
     color: #303840;
     margin-bottom: 95px;
     margin-top: auto;
+    position: absolute;
+    top: 40px;
 }
 
 .left-pre-slash {
@@ -372,8 +376,7 @@ h3.info-cont__title {
 }
 
 .page-banner__title.audit-page {
-    margin-top: auto;
-    margin-bottom: 10px;
+    margin-top: 30px;
 }
 
 .contents__title.audit-page {
@@ -393,7 +396,7 @@ h3.info-cont__title {
 
 .page-banner.projects-page {
     height: 230px;
-    background: url(/static/img/projects/6.0.jpg) no-repeat 50%;
+    background: url(/static/img/leading/4.1.jpg) no-repeat 50%;
     padding-left: 31px;
 }
 
@@ -806,4 +809,31 @@ img.impleneted-project {
 .content-side.no-left-menu {
     padding-left: 40px;
     padding-right: 40px;
+}
+
+.teaserimg {
+    position:absolute;
+    left:0px;
+    top:0px;
+    object-fit: contain;
+}
+
+#teaserimg01 {
+display: none;
+}
+
+#teaserimg02 {
+    /* display: none; */
+    top: -9px;
+    width: 100%;
+    height: 180%;
+    object-fit: cover;
+}
+
+#teaserimg03 {
+    display: none;
+    left: -13%;
+    top: -29px;
+    width: 140%;
+    height: 150%;
 }
